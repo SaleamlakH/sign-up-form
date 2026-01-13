@@ -77,6 +77,10 @@ input:not([type='checkbox']) {
     letter-spacing: 1px;
 }
 
+input::placeholder {
+    font-size: 0.8em;
+}
+
 input:focus {
     outline: none;
     border: 1.5px solid hsl(37, 91%, 40%);
