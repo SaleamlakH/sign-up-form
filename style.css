@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'odin-logo';
+    src: url('./assets/fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('./assets/fonts/norse-bold-webfont.woff') format('woff');
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    color: inherit;
     font-family: inherit;
     font-size: 100%;
 }
@@ -20,6 +27,9 @@
     /* box shadow */
     --top-left-shadow: -1px -1px 5px 1px hsl(0 0 0 / 25%);
     --bottom-right-shadow: 1px 1px 5px 0px hsl(0 0 0 / 75%);
+
+    /* font color */
+    --color: hsl(0 0 25%);
 }
 
 body {
@@ -34,12 +44,85 @@ body {
 }
 
 form {
+    color: var(--color);
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    width: min(350px, 80%);
     padding: 3em 1.5em;
     background: linear-gradient(142deg, var(--start-color), var(--end-color));
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: var(--top-left-shadow), var(--bottom-right-shadow)
+    box-shadow: var(--top-left-shadow), var(--bottom-right-shadow);
+}
+
+h1 {
+    text-align: center;
+    font-family: odin-logo;
+    font-size: 1.8rem;
+    margin: 0 0 1em;
+    color: hsl(37 60 35);
+}
+
+input:not([type='checkbox']) {
+    display: block;
+    margin: 1px 0 0.8em;
+    width: 100%;
+    padding: 0.4em;
+    background-color: transparent;
+    border:1px solid hsl(0 2 50 / 50%);
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid hsl(37, 91%, 40%);
+}
+
+label[for='terms-conditions'] {
+    font-size: 0.8em;
+}
+
+button {
+    margin: 1em 0;
+    padding: 0.5em;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(37 95 19);
+    font-weight: 900;
+    color: hsl(0 0 100);
+}
+
+button:hover {
+    background-color: hsl(37 95 30);
+}
+
+button:active {
+    box-shadow: inset -1px 1px white;
+}
+
+.terms-row {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.have-account {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+a {
+    font-weight: 900;
+    color: hsl(0 0 0);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /* dark mode  */
@@ -51,9 +134,18 @@ form {
     }
 
     form {
+        --color: hsl(0 0 60);
         --start-color: hsl(0 0 6 / 82%);
         --end-color: hsl(240 60 4 / 98%);
         --top-left-shadow: -1px -1px 5px 1px hsl(0 3 27 / 25%);
         --bottom-right-shadow: 1px 1px 5px 0px hsl(0 3 27);
+    }
+
+    button:active {
+        box-shadow: inset -1px 1px white;
+    }
+
+    a {
+        color: hsl(0 0 100);
     }
 }
