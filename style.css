@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+/* Light mode*/
+:root {
+    color-scheme: light dark;
+    --bg-image: url('./assets/images/light-odin-home-isometric.png');
+    --bg-color: hsl(0 0 100);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: no-repeat bottom left/100% var(--bg-image) var(--bg-color);
+}
+
+/* dark mode  */
+@media (prefers-color-scheme: dark) {
+    body {
+        --bg-image: url('./assets/images/dark-odin-home-isometric.png');
+        --bg-color:  hsl(240 30 5);
+    }
+}
