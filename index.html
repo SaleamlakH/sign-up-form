@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+    <body>
+        <form>
+            <h1>Start your career in web development</h1>
+            
+            <div class="name-row">
+                <label for="user-name">Username</label>
+                <input required type="text" name="user_name" id="user-name" autofocus>
+            </div>
+
+            <div class="email-row">
+                <label for="email-address">Email Address</label>
+                <input required type="email" name="email_address" id="email-address">
+            </div>
+
+            <div class="password-row">
+                <label for="password">Password</label>
+                <input required type="password" name="password" id="password">
+            </div>
+
+            <div class="confirm-password-row">
+                <label for="confirm-password">Confirm Password</label>
+                <input required type="password" name="confirm_password" id="confirm-password">
+            </div>
+
+            <div class="terms-row">
+                <input type="checkbox" name="accept_terms_and_conditions" id="terms-conditions">
+                <label for="terms-conditions">I agree to all <a href='#'>terms</a> and <a href='#'>conditions</a></label>
+            </div>
+
+            <div class="submit-button">
+                <button>Sign Up</button>
+            </div>
+
+            <p>Already have an account? <a href="#">Login</a></p>
+        </form>
+    </body>
+</html>
