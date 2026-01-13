@@ -106,7 +106,9 @@ button:hover {
 }
 
 button:active {
-    box-shadow: inset -1px 1px white;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px var(--bg-color),
+            inset -1px -1px var(--bg-color);
 }
 
 .terms-row {
@@ -143,10 +145,6 @@ a:hover {
         --end-color: hsl(240 60 4 / 98%);
         --top-left-shadow: -1px -1px 5px 1px hsl(0 3 27 / 25%);
         --bottom-right-shadow: 1px 1px 5px 0px hsl(0 3 27);
-    }
-
-    button:active {
-        box-shadow: inset -1px 1px white;
     }
 
     a {
