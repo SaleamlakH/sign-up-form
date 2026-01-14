@@ -43,7 +43,7 @@ body {
     align-items: center;
 }
 
-nav {
+header {
     color: hsl(37 60 35);
     font-family: odin-logo;
     font-size: 1.5rem;
@@ -55,17 +55,17 @@ nav {
     gap: 5px;
 }
 
-nav .odin-logo {
+.odin-logo {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-nav .odin-logo img {
+.odin-logo img {
     height: 2.5em;
 }
 
-nav .left-side {
+nav {
     display: flex;
     gap: 5px;
     margin-left: auto;
@@ -199,7 +199,7 @@ a:hover {
         --bg-darkness: linear-gradient(hsl(0 0 0 / 40%), hsl(0 0 0 / 40%))
     }
 
-    nav .left-side {
+    nav {
         background-color: hsl(0 0 30 / 60%);
         border-radius: 10px;
     }
