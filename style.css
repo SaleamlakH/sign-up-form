@@ -25,8 +25,7 @@
     --end-color: hsl(240 60 95 / 63%);
     
     /* box shadow */
-    --top-left-shadow: -1px -1px 5px hsl(0 0 0 / 25%);
-    --bottom-right-shadow: 1px 1px 5px hsl(0 0 0 / 25%);
+    --shadow: 0px 0px 5px hsl(0 0 0 / 30%);
 
     /* font color */
     --color: hsl(0 0 25%);
@@ -127,7 +126,7 @@ form {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: var(--top-left-shadow), var(--bottom-right-shadow);
+    box-shadow: var(--shadow);
 }
 
 h1 {
@@ -241,8 +240,7 @@ footer {
         --color: hsl(0 0 60);
         --start-color: hsl(0 0 6 / 82%);
         --end-color: hsl(240 60 4 / 98%);
-        --top-left-shadow: -1px -1px 5px 1px hsl(0 3 27 / 25%);
-        --bottom-right-shadow: 1px 1px 5px 0px hsl(0 3 27);
+        --shadow: 0px 0px 5px 0px hsl(0 3 27 / 50%);
     }
 
     a {
