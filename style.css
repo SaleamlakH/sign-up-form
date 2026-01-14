@@ -47,7 +47,7 @@ header {
     color: hsl(37 60 35);
     font-family: odin-logo;
     font-size: 1.5rem;
-    margin: 0.5em 0.5em 1em;
+    margin: 0.5em 0.5em 0em;
 
     align-self: stretch;
     display: flex;
@@ -109,7 +109,8 @@ form {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     width: min(350px, 80%);
-    padding: 1.5em 1.5em;
+    padding: 1.5em;
+    margin: auto;
     background: linear-gradient(142deg, var(--start-color), var(--end-color));
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
@@ -191,6 +192,17 @@ a:hover {
     text-decoration: none;
 }
 
+footer {
+    background-color: hsl(0 0 70 / 60%);
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color);
+    text-align: center;
+    align-self: stretch;
+}
+
 /* dark mode  */
 @media (prefers-color-scheme: dark) {
     body {
@@ -223,5 +235,10 @@ a:hover {
 
     a {
         color: hsl(0 0 100);
+    }
+
+    footer {
+        background-color: hsl(0 0 0 / 70%);
+        color: hsl(0 0 90);
     }
 }
