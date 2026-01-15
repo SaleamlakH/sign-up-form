@@ -161,12 +161,14 @@ input:focus {
     border: 1.5px solid hsl(37, 91%, 40%);
 }
 
- input:not([type='checkbox']) + label {
+.username-hint,
+.password-hint,
+.password-match-hint {
     font-size: 0.7em;
     letter-spacing: 0.1px;
 }
 
-input:user-invalid + label {
+input:user-invalid + .hint {
     color: hsl(0 100 60);
 }
 

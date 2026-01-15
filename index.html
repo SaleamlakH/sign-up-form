@@ -30,7 +30,7 @@
             <div class="row name-row">
                 <label for="user-name">Username</label>
                 <input required autofocus type="text" name="user_name" id="user-name" minlength="3" maxlength="15" placeholder="e.g, saleamlak">
-                <label for="user-name">Must be 3 to 15 characters long</label>
+                <span class="hint username-hint">Must be 3 to 15 characters long.</span>
             </div>
 
             <div class="row email-row">
@@ -41,13 +41,13 @@
             <div class="row password-row">
                 <label for="password">Password</label>
                 <input required type="password" name="password" id="password" minlength="8">
-                <label for="password">Must be at least 8 characters</label>
+                <span class="hint password-hint">Must be at least 8 characters.</span>
             </div>
 
             <div class="row confirm-password-row">
                 <label for="confirm-password">Confirm Password</label>
                 <input required type="password" name="confirm_password" id="confirm-password">
-                <label for="confirm-password">Password don't match</label>
+                <span class="hint password-match-hint">Passwords must match.</span>
             </div>
 
             <div class="terms-row">
