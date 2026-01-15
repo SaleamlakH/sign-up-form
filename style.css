@@ -46,7 +46,6 @@ header {
     color: hsl(37 60 35);
     font-family: odin-logo;
     font-size: 1.5rem;
-    margin: 0.5em 0.5em 0em;
 
     align-self: stretch;
     display: flex;
@@ -133,13 +132,17 @@ h1 {
     text-align: center;
     font-family: odin-logo;
     font-size: 1.8rem;
-    margin: 0 0 1em;
+    margin: 0 0 0.5em;
     color: hsl(37 60 35);
+}
+
+form .row:not(.submit-button-row) {
+    margin-bottom: 0.5em;
 }
 
 input:not([type='checkbox']) {
     display: block;
-    margin: 1px 0 0.8em;
+    margin: 1px 0 0;
     width: 100%;
     padding: 0.4em;
     background-color: transparent;
@@ -156,6 +159,15 @@ input::placeholder {
 input:focus {
     outline: none;
     border: 1.5px solid hsl(37, 91%, 40%);
+}
+
+ input:not([type='checkbox']) + label {
+    font-size: 0.7em;
+    letter-spacing: 0.1px;
+}
+
+input:user-invalid + label {
+    color: hsl(0 100 60);
 }
 
 label[for='terms-conditions'] {

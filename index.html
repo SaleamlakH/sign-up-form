@@ -26,24 +26,27 @@
         <form>
             <h1>Start your career in web development</h1>
             
-            <div class="name-row">
+            <div class="row name-row">
                 <label for="user-name">Username</label>
-                <input required autofocus type="text" name="user_name" id="user-name" placeholder="e.g, saleamlak">
+                <input required autofocus type="text" name="user_name" id="user-name" minlength="3" maxlength="15" placeholder="e.g, saleamlak">
+                <label for="user-name">Must be 3 to 15 characters long</label>
             </div>
 
-            <div class="email-row">
+            <div class="row email-row">
                 <label for="email-address">Email Address</label>
                 <input required type="email" name="email_address" id="email-address" placeholder="e.g, saleamlak@example.com">
             </div>
 
-            <div class="password-row">
+            <div class="row password-row">
                 <label for="password">Password</label>
-                <input required type="password" name="password" id="password">
+                <input required type="password" name="password" id="password" minlength="8">
+                <label for="password">Must be at least 8 characters</label>
             </div>
 
-            <div class="confirm-password-row">
+            <div class="row confirm-password-row">
                 <label for="confirm-password">Confirm Password</label>
                 <input required type="password" name="confirm_password" id="confirm-password">
+                <label for="confirm-password">Password don't match</label>
             </div>
 
             <div class="terms-row">
@@ -51,7 +54,7 @@
                 <label for="terms-conditions">I agree to all <a href='#'>terms</a> and <a href='#'>conditions</a></label>
             </div>
 
-            <div class="submit-button-row">
+            <div class="row submit-button-row">
                 <button>Sign Up</button>
             </div>
 
