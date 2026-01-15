@@ -35,7 +35,8 @@
 
             <div class="row email-row">
                 <label for="email-address">Email Address</label>
-                <input required type="email" name="email_address" id="email-address" placeholder="e.g, saleamlak@example.com">
+                <input required type="email" name="email_address" id="email-address" pattern="^\w+@\w+\.\w{2,3}" placeholder="e.g, saleamlak@example.com">
+                <span class="hint email-hint">Must be valid address (test@gmail.com)</span>
             </div>
 
             <div class="row password-row">

@@ -161,9 +161,7 @@ input:focus {
     border: 1.5px solid hsl(37, 91%, 40%);
 }
 
-.username-hint,
-.password-hint,
-.password-match-hint {
+.hint {
     font-size: 0.7em;
     letter-spacing: 0.1px;
 }
