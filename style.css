@@ -73,8 +73,9 @@ nav {
 
 nav .github-link {
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1rem;
+    font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
     color: var(--color);
     padding: 0.5em;
     border-right: 2px solid hsl(0 0 70);
@@ -116,8 +117,9 @@ nav .github-link:hover {
 form {
     color: var(--color);
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
+    letter-spacing: 1px;
     width: min(350px, 80%);
     padding: 1.5em;
     margin: auto;
@@ -162,8 +164,11 @@ input:focus {
 }
 
 .hint {
-    font-size: 0.7em;
-    letter-spacing: 0.1px;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    padding-top: 0.1em;
+    display: inline-block;
 }
 
 input:user-invalid + .hint {
@@ -218,9 +223,10 @@ a:hover {
 footer {
     background-color: hsl(0 0 70 / 60%);
     padding: 1em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 1px;
     color: var(--color);
     text-align: center;
     align-self: stretch;
