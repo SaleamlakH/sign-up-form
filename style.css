@@ -102,7 +102,7 @@ nav .theme-button::before {
 
 nav .github-link:hover,
 .theme-button:hover {
-    background-color: hsl(37 95 30);
+    background-color: hsl(37 59 48 / 50%);
 }
 
 nav .github-link:hover {
