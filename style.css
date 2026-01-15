@@ -227,40 +227,38 @@ footer {
 }
 
 /* dark mode  */
-@media (prefers-color-scheme: dark) {
-    body {
-        --bg-image: url('./assets/images/dark-odin-home-isometric.png');
-        --bg-color:  hsl(240 30 5);
-        --bg-darkness: linear-gradient(hsl(0 0 0 / 40%), hsl(0 0 0 / 40%))
-    }
+body.dark-mode {
+    /* page background */
+    --bg-image: url('./assets/images/dark-odin-home-isometric.png');
+    --bg-color:  hsl(240 30 5);
+    --bg-darkness: linear-gradient(hsl(0 0 0 / 40%), hsl(0 0 0 / 40%))
+}
 
-    nav {
-        background-color: hsl(0 0 30 / 60%);
-        border-radius: 10px;
-    }
+body.dark-mode nav {
+    background-color: hsl(0 0 30 / 60%);
+}
 
-    nav .github-link {
-        color: hsl(0 0 90);
-        border-right-color: hsl(0 0 40);
-    }
+body.dark-mode nav .github-link {
+    color: hsl(0 0 90);
+    border-right-color: hsl(0 0 40);
+}
 
-    nav .theme-button::before {
-        content: url('./assets/icons/icon-light-mode.svg');
-    }
+body.dark-mode nav .theme-button::before {
+    content: url('./assets/icons/icon-light-mode.svg');
+}
 
-    form {
-        --color: hsl(0 0 60);
-        --start-color: hsl(0 0 6 / 82%);
-        --end-color: hsl(240 60 4 / 98%);
-        --shadow: 0px 0px 5px 0px hsl(0 3 27 / 50%);
-    }
+body.dark-mode form {
+    --color: hsl(0 0 60);
+    --start-color: hsl(0 0 6 / 82%);
+    --end-color: hsl(240 60 4 / 98%);
+    --shadow: 0px 0px 5px 0px hsl(0 3 27 / 50%);
+}
 
-    a {
-        color: hsl(0 0 100);
-    }
+body.dark-mode a {
+    color: hsl(0 0 100);
+}
 
-    footer {
-        background-color: hsl(0 0 0 / 70%);
-        color: hsl(0 0 90);
-    }
+body.dark-mode footer {
+    background-color: hsl(0 0 0 / 70%);
+    color: hsl(0 0 90);
 }
