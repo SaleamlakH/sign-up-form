@@ -120,7 +120,7 @@ form {
     font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
-    width: min(350px, 80%);
+    width: min(350px, 90%);
     padding: 1.5em;
     margin: auto;
     background: linear-gradient(142deg, var(--start-color), var(--end-color));
