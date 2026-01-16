@@ -148,7 +148,7 @@ input:not([type='checkbox']) {
     width: 100%;
     padding: 0.4em;
     background-color: transparent;
-    border:1px solid hsl(0 2 50 / 50%);
+    border:1px solid hsl(0 2 50 / 70%);
     border-radius: 5px;
     letter-spacing: 1px;
 }
@@ -157,9 +157,37 @@ input::placeholder {
     font-size: 0.8em;
 }
 
-input:focus {
+input:not([type='checkbox']):focus {
     outline: none;
     border: 1.5px solid hsl(37, 91%, 40%);
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    margin: 0.3em;
+    height: 0.8em;
+    width: 0.8em;
+    border:1px solid hsl(0 2 50 / 90%);
+    border-radius: 2px;
+    position: relative;
+}
+
+input[type='checkbox']::before {
+    content: '✔';
+    color: hsl(0 0 100);
+    font-size: 0.8em;
+    position: absolute;
+    right: -0.5px;
+    top: -1.5px;
+    visibility: hidden;
+}
+
+input[type='checkbox']:checked::before{
+    visibility: visible;
+}
+
+input[type='checkbox']:checked {
+    background-color: hsl(120 100 30);
 }
 
 .hint {
