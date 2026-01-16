@@ -11,9 +11,9 @@ themeBtn.addEventListener('click', toggleDarkMode);
 function validatePasswordConfirmation(event) { 
     if (confirmPassword.value !== password.value) {
         if (event.currentTarget.type === 'submit') event.preventDefault();
-        passwordMatchHint.style.color = 'hsl(0 100 60)';
+        passwordMatchHint.style.visibility = 'visible';
     } else {
-        passwordMatchHint.style.color = 'transparent';
+        passwordMatchHint.style.visibility = 'hidden';
     }
 }
 

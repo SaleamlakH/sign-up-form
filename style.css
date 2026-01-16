@@ -191,16 +191,16 @@ input[type='checkbox']:checked {
 }
 
 .hint {
-    color: transparent;
+    color: hsl(0 100 60);
     font-size: 0.8em;
     letter-spacing: 0.5px;
     font-weight: normal;
     padding-top: 0.1em;
-    display: inline-block;
+    visibility: hidden;
 }
 
 input:user-invalid + .hint {
-    color: hsl(0 100 60);
+    visibility: visible;
 }
 
 label[for='terms-conditions'] {
