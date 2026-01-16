@@ -164,6 +164,7 @@ input:focus {
 }
 
 .hint {
+    color: transparent;
     font-size: 0.8em;
     letter-spacing: 0.5px;
     font-weight: normal;

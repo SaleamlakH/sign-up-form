@@ -13,7 +13,7 @@ function validatePasswordConfirmation(event) {
         if (event.currentTarget.type === 'submit') event.preventDefault();
         passwordMatchHint.style.color = 'hsl(0 100 60)';
     } else {
-        passwordMatchHint.style.color = 'hsl(0 0 60)';
+        passwordMatchHint.style.color = 'transparent';
     }
 }
 
