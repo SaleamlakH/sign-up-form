@@ -150,7 +150,6 @@ input:not([type='checkbox']) {
     background-color: transparent;
     border:1px solid hsl(0 2 50 / 50%);
     border-radius: 5px;
-    font-weight: bold;
     letter-spacing: 1px;
 }
 
